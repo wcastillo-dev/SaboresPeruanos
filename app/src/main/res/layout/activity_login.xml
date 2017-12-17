@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="pe.edu.upc.saboresperuanos_v12.activities.ActivityLogin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_ingresa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsuario"
+        android:hint="usuario/correo"/>
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="contraseña"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIngresar"
+            android:text="Ingresar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegistrar"
+            android:text="no tengo y quiero una..!"/>
+    </LinearLayout>
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_sin_cuenta"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSinCuenta"
+        android:text="rapido tengo hambre"/>
+
+</LinearLayout>
